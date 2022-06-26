@@ -9,10 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.9",
     "nanoid": "^3.3.4",
     "swiper": "^5.4.5",
     "vue": "^2.6.14",
-    "vue-router": "^4.0.15",
+    "vue-router": "^3.5.4",
     "vuex": "^3.6.2"
   },
   "devDependencies": {

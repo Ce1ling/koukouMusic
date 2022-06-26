@@ -1,15 +1,13 @@
 <template>
   <header class="header-main">
-    <h1><a href="###"></a></h1>
+    <h1><router-link to="/musichall/homepage" ></router-link></h1>
     <nav class="header-left-area">
       <ul>
-        <li class="nav-is-active">
-          <a href="###" class="nav-active">音乐馆</a>
-        </li>
-        <li><a href="###">我的音乐</a></li>
-        <li><a href="###">客户端</a></li>
-        <li><a href="###">开放平台</a></li>
-        <li><a href="###">VIP</a></li>
+        <li><router-link active-class="nav-active" to="/musichall">音乐馆</router-link></li>
+        <li><router-link active-class="nav-active" to="/mymusic">我的音乐</router-link></li>
+        <li><a href="###" target="_blank">客户端</a></li>
+        <li><a href="###" target="_blank">开放平台</a></li>
+        <li><a href="###" target="_blank">VIP</a></li>
       </ul>
     </nav>
     <div class="search-area">
@@ -31,8 +29,6 @@
 </template>
 
 <script>
-// import SubNav from './SubNav.vue'
-
 export default {
   name: "Header",
   components: {},

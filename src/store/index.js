@@ -8,6 +8,7 @@ const songRecommend = {
   state: () => ([
     {   // 为你推荐
       id: nanoid(), 
+      routeName: 'recommendforu',
       title: '为你推荐', 
       songList: {
         '0': [
@@ -32,13 +33,35 @@ const songRecommend = {
     },
     {   // 经典国语
       id: nanoid(), 
+      routeName: 'classiccn',
       title: '经典国语', 
-      item: [ // 歌单格式
-        { id: nanoid(), imgUrl: '图片地址', title: '标题', views: '播放量', unit: '单位' },
-      ]
+      songList: {
+        '0': [
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img1.jpg'),title: '入耳即心动, 还不快进来', views: '806.3', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img2.jpg'), title: '粉墨登场~ 坠入人间的星屑少女', views: '994.2', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img3.jpg'), title: '国风戏腔 | 戏子演绎悲欢离合', views: '2155.5', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img4.jpg'), title: '500首轻音收集 ：学渣听了也想考北大', views: '4618.7', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img5.jpg'), title: '好评999+英文歌！轻松解压100％', views: '3.4', unit: '亿' },
+        ],
+        '1': [
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img6.jpg'),title: '甜系Rap | 我想跨过人海去拥抱你', views: '572.9', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img7.jpg'), title: '谱写solo | 韩永斌歌曲精选集', views: '10.6', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img8.jpg'), title: '爱河这种东西 还是远离吧 坠不得', views: '535.3', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img9.jpg'), title: 'Hip Hop| 微醺慵懒腔调慢慢摇摆', views: '520.4', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img10.jpg'), title: '燃系说唱 | 100%耳膜穿透加持', views: '119.1', unit: '亿' },
+        ],
+        '2': [
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img11.jpg'),title: '时代少年团演唱会现场歌曲赏', views: '496.5', unit: '万' },
+          { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img12.jpg'), title: '怀念99% | 你已拨打18岁连线成功', views: '4051.8', unit: '万' },
+          // { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img13.jpg'), title: '怀念99% | 你已拨打18岁连线成功', views: '4051.8', unit: '万' },
+          // { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img14.jpg'), title: '怀念99% | 你已拨打18岁连线成功', views: '4051.8', unit: '万' },
+          // { id: nanoid(), imgUrl: require('../assets/images/recommend-part-Chinese-img15.jpg'), title: '怀念99% | 你已拨打18岁连线成功', views: '4051.8', unit: '万' },
+        ],
+      }
     },
     {   // 网络歌曲
       id: nanoid(), 
+      routeName: 'netmusic',
       title: '网络歌曲', 
       item: [
         { id: nanoid(), imgUrl: '图片地址', title: '标题', views: '播放量', unit: '单位' },
@@ -47,6 +70,7 @@ const songRecommend = {
     {   // 经典
       id: nanoid(), 
       title: '经典', 
+      routeName: 'classic',
       item: [
         { id: nanoid(), imgUrl: '图片地址', title: '标题', views: '播放量', unit: '单位' },
       ]
@@ -54,6 +78,7 @@ const songRecommend = {
     {   // 官方歌单
       id: nanoid(), 
       title: '官方歌单', 
+      routeName: 'official',
       item: [
         { id: nanoid(), imgUrl: '图片地址', title: '标题', views: '播放量', unit: '单位' },
       ]
@@ -61,6 +86,7 @@ const songRecommend = {
     {   // 情歌
       id: nanoid(), 
       title: '情歌', 
+      routeName: 'love',
       item: [
         { id: nanoid(), imgUrl: '图片地址', title: '标题', views: '播放量', unit: '单位' },
       ]
